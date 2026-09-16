@@ -14,14 +14,14 @@ let custoDobraPesca = 50; // preço clique dobrado
 // 3. AÇÕES DO JOGO (Funções)
 //======================================================
 function pontos() {
-    score = score + 1;
+    score = score + peixesPorClique;
     document.getElementById('moedas').innerText = score;
 }
 function upgrade() {
     if (score >= pontoDobrado
     ) {
         score = score - pontoDobrado;
-        pontosAutomaticos = pontosAutomaticos + 1;
+        pontosAutomaticos = pontosAutomaticos+2;
         pontoDobrado = pontoDobrado * 2;
         document.getElementById('moedas').innerText = score;
         document.getElementById('autoClicker').innerText = pontoDobrado;
@@ -30,12 +30,12 @@ function upgrade() {
         alert("Você preisa de " + pontoDobrado
             + " pontos pra comprar")
     }
-
+}
     function pontosPorPesca() {
         if (score >= custoDobraPesca) {
             score = score - custoDobraPesca;
             peixesPorClique=peixesPorClique*2;
-            custoDobraPesca=custoDobraPesca*3
+            custoDobraPesca=custoDobraPesca*3;
              document.getElementById('moedas').innerText = score;
             document.getElementById('ClickDobrado').innerText= custoDobraPesca;
     }else{
@@ -43,7 +43,7 @@ function upgrade() {
     }
     }
 
-}
+
 function rodarTempo() {
     score = score + pontosAutomaticos;
     document.getElementById('moedas').innerText = score;
