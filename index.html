@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Clicker</title>
+    <link rel='stylesheet' href='main.css'>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <input type="button" value="pesque" id="BotaoDePontos"
+            onclick="pontos()">
+        </div>
+        <div>
+           <h1>Pontuação:  <span id="moedas">0</span></h1>
+        </div>
+    </main>
+
+    <div>
+        <h2>Melhorias:</h2>
+       
+       <button onclick="pontosPorPesca()">
+        Comprar Click Dobrado: <span id="ClickDobrado">50</span> Pontos
+       </button>
+
+        <button onclick="upgrade()">
+        Comprar Ajudante: <span id="autoClicker">100</span> Pontos
+       </button>
+
+    </div>
+</body>
+
+</html>
