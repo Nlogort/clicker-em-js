@@ -5,3 +5,21 @@
   font-family: "VT323",sans-serif;
   image-rendering: pixelated;
 }
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaoPescar{
+  height:150px;
+  width: 150px;
+  flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ margin: 30px;
+ font-size: 25px;
+}
