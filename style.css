@@ -1,25 +1,42 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
-  font-family: "VT323",sans-serif;
+  box-sizing: border-box;
+  font-family: "VT323", sans-serif;
   image-rendering: pixelated;
+  
 }
 
-body{
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image:url(img/agua-pixelada.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 40px;
 }
 
-.botaoPescar{
-  height:150px;
+.botaoPescar {
+  height: 150px;
   width: 150px;
   flex-direction: column;
- align-items: center;
- justify-content: center;
- margin: 30px;
- font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  font-size: 25px;
+}
+
+.melhoriasbtn {
+  height: 100px;
+  width: 150px;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
 }
