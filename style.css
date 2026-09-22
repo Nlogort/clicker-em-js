@@ -18,8 +18,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   gap: 40px;
+  touch-action: manipulation;
 }
-
+/*=========================================================
+          BOTAO DOS PONTOS
+===========================================================*/
 .botaoPescar {
   height: 290px;
   width: 290px;
@@ -27,8 +30,10 @@ body {
   align-items: center;
   justify-content: center;
   margin: 20px;
-  background: transparent;
-
+  background-color: transparent;
+  border: none;
+ -webkit-tap-highlight-color: transparent;/*REMOVE CAIXA AZUL DO MOBILE*/
+ outline: none;/*GARANTE QUE NENHUMA BORDA APAREÇA*/
   cursor: pointer;
   transition: transform 0.2s ease;
   transform: scale(1.08);
@@ -36,11 +41,11 @@ body {
 
 .botaoPescar:hover {
   transition: transform 0.2s ease;
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
 .botaoPescar:active {
-  transition: transform 0.2s ease;
+  transition: transform 0.02s ease;
   transform: scale(0.90);
 }
 
