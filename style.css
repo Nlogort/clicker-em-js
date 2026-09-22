@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "VT323", sans-serif;
   image-rendering: pixelated;
-  
+
 }
 
 body {
@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image:url(img/agua-pixelada.png);
+  background-image: url(img/agua-pixelada.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -21,13 +21,27 @@ body {
 }
 
 .botaoPescar {
-  height: 150px;
-  width: 150px;
+  height: 290px;
+  width: 290px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 30px;
-  font-size: 25px;
+  margin: 20px;
+  background: transparent;
+
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  transform: scale(1.08);
+}
+
+.botaoPescar:hover {
+  transition: transform 0.2s ease;
+  transform: scale(0.95);
+}
+
+.botaoPescar:active {
+  transition: transform 0.2s ease;
+  transform: scale(0.90);
 }
 
 .melhoriasbtn {
@@ -39,4 +53,17 @@ body {
   justify-content: center;
   margin: 10px;
   padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  transform: scale(0.95);
+}
+
+.melhoriasbtn:hover {
+  transition: transform 0.2s ease;
+  transform: scale(0.95);
+}
+
+.melhoriasbtn:active {
+  transition: transform 0.2s ease;
+  transform: scale(0.95);
 }
