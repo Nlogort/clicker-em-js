@@ -8,6 +8,7 @@
 }
 
 body {
+   overflow: hidden;
   width: 100%;
   min-height: 110vh;
   display: flex;
