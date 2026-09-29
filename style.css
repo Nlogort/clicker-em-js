@@ -8,7 +8,8 @@
 }
 
 body {
-   overflow: hidden;
+   overflow-x: hidden;
+    overflow-y: auto;
   width: 100%;
   min-height: 110vh;
   display: flex;
@@ -43,12 +44,12 @@ body {
 
 .botaoPescar:hover {
   transition: transform 0.2s ease;
-  transform: scale(0.98);
+  transform: scale(0.95);
 }
 
 .botaoPescar:active {
   transition: transform 0.02s ease;
-  transform: scale(0.90);
+  transform: scale(0.88);
 }
 
 .melhoriasbtn {
@@ -86,7 +87,7 @@ h1{
 display: flex;
 align-items: center;
 justify-content: center;
-margin: 10px;
+margin: 1px;
 font-size: 40px;
 }
 
@@ -94,6 +95,6 @@ h2{
   display: flex;
 align-items: center;
 justify-content: center;
-margin: 10px;
+margin: 1px;
 font-size: 30px;
 }

@@ -11,20 +11,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sawarabi+Mincho&family=VT323&display=swap"
         rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icones/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icones/favicon-16x16.png">
+    <link rel="manifest" href="img/icones/site.webmanifest">
     <script src="main.js" defer></script>
 
 </head>
 
 <body>
     <main>
-         <div>
+        <div>
             <h1>Pontuação: <span id="moedas">0</span></h1>
         </div>
         <div>
-        
-            <img class="botaoPescar"id="BotaoDePontos" onclick="pontos()" src="img/barco-botao.png" alt="botao de pesca">
+
+            <img class="botaoPescar" id="BotaoDePontos" onclick="pontos()" src="img/barco-botao.png"
+                alt="botao de pesca">
         </div>
-       
+
     </main>
 
     <div>
@@ -32,7 +38,7 @@
 
         <button class="melhoriasbtn" onclick="pontosPorPesca()">
             Dobrar Clique:<span id="ClickDobrado">50</span> Pontos
-            
+
         </button>
 
         <button class="melhoriasbtn" onclick="upgrade()">
