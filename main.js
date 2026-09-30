@@ -28,8 +28,7 @@ function upgrade() {
         document.getElementById('autoClicker').innerText = pontoDobrado;
         salvarJogo();
     } else {
-        alert("Você preisa de " + pontoDobrado
-            + " pontos pra comprar")
+       mostrarAviso(`Você precisa de ${pontoDobrado} pontos para comprar`)
     }
 
 }
@@ -42,7 +41,8 @@ function pontosPorPesca() {
         document.getElementById('ClickDobrado').innerText = custoDobraPesca;
         salvarJogo();
     } else {
-        alert(`voce precisa de ${custoDobraPesca} para comprar`)
+       mostrarAviso(`Você precisa de ${custoDobraPesca} pontos para comprar`);//literalmento o alerta chama a função la de baixo e so funciona se o ANIMAL DO USUARIO NÃO TIVER DINHEIRO E CLICAR NO BOTAO
+      
     }
 
 }
@@ -65,3 +65,12 @@ function salvarJogo() {
 document.getElementById('moedas').innerText = score;
 document.getElementById('autoClicker').innerText = pontoDobrado;
 document.getElementById('ClickDobrado').innerText = custoDobraPesca;
+
+function mostrarAviso(mensagem){ // função que cria o motor que e chamado nos 2 else
+    const caixa= document.getElementById('caixaAviso'); //define a "caixa" ou seja a div do html como constante(voce vai entender eu acho ;p)
+    document.getElementById('textoAviso').innerText=mensagem; //define que a mensagem colocada na caixa de aviso seja aescrita
+    caixa.className= 'avisoVisivel';//chama a classe que e visivel
+    setTimeout(function() {
+        caixa.className='avisoEscondido'; // mostra durante um pouco de tempo a caixa de aviso
+    },2500);
+}
