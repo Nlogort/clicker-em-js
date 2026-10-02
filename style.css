@@ -8,8 +8,8 @@
 }
 
 body {
-   overflow-x: hidden;
-    overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 100%;
   min-height: 110vh;
   display: flex;
@@ -23,6 +23,7 @@ body {
   gap: 40px;
   touch-action: manipulation;
 }
+
 /*=========================================================
           BOTAO DOS PONTOS
 ===========================================================*/
@@ -35,8 +36,10 @@ body {
   margin-top: 60px;
   background-color: transparent;
   border: none;
- -webkit-tap-highlight-color: transparent;/*REMOVE CAIXA AZUL DO MOBILE*/
- outline: none;/*GARANTE QUE NENHUMA BORDA APAREÇA*/
+  -webkit-tap-highlight-color: transparent;
+  /*REMOVE CAIXA AZUL DO MOBILE*/
+  outline: none;
+  /*GARANTE QUE NENHUMA BORDA APAREÇA*/
   cursor: pointer;
   transition: transform 0.2s ease;
   transform: scale(1.08);
@@ -64,8 +67,8 @@ body {
   cursor: pointer;
   background-image: url(img/botao-bolhas.png);
   background-repeat: no-repeat;
-  background-size: 100% ;
-  border:none;
+  background-size: 100%;
+  border: none;
 
   outline: none;
 
@@ -83,45 +86,57 @@ body {
   transform: scale(0.85);
 }
 
-h1{
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 1px;
-font-size: 40px;
-}
-
-h2{
+h1 {
   display: flex;
-align-items: center;
-justify-content: center;
-margin: 1px;
-font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  font-size: 40px;
 }
 
-#CaixaAviso{
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  font-size: 30px;
+}
+
+#caixaAviso {
   top: 20px;
   position: fixed;
   transition: all 0.3s ease;
-  
-  
-}
-
-
-.avisoEscondido{
-   opacity: 0;
-  transform: translateY(-20px);
-  pointer-events: none; 
-  }
-
- .avisoVisivel{
-  opacity: 1;
-  transform: translateY(0);
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 300px;
-  height: 100px;
-  font-size: 30px;
+  height: 8dvh;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
- } 
+  background-image: url(img/Alerta.png);
+  background-repeat: no-repeat;
+  background-size: 108%;
+  background-position-y: center;
+  border: none;
+  color: white;
+}
+
+
+.avisoEscondido {
+  opacity: 0;
+  top: -100px;
+  pointer-events: none;
+}
+
+.avisoVisivel {
+  opacity: 1;
+  top: 20px;
+  
+}
+
+#textoAviso{
+  margin: 0;
+  text-align: center;
+}
