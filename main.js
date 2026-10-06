@@ -74,3 +74,20 @@ function mostrarAviso(mensagem){ // função que cria o motor que e chamado nos 
         caixa.className='avisoEscondido'; // mostra durante um pouco de tempo a caixa de aviso
     },2500);
 }
+
+function chamarReset(){
+    const reiniciar = document.getElementById('CaixaReset');
+    reiniciar.className='resetVisivel'
+   setTimeout(function() {
+        reiniciar.className='botaoEsondidoReset'; // mostra durante um pouco de tempo a caixa de aviso
+    },2500);
+}
+
+function confirmarResetTotal(){
+  
+
+}
+
+function fecharCaixaReset(){
+
+}

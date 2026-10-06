@@ -21,9 +21,20 @@
 </head>
 
 <body>
+    <button onclick="chamarReset()" class="botaoEscondidoReset">Resetar</button>
+    <div id="CaixaReset" class="resetEscondido">
+    <p>Deseja apagar sua pescaria?</p>
+    <div class="botoes-confirmacao">
+        <button onclick="confirmarResetTotal()">Sim, deletar</button>
+        <button onclick="fecharCaixaReset()">Cancelar</button>
+    </div>
+</div>
+
+
     <main>
-        <div>
+        <div class="pontos">
             <h1>Pontuação: <span id="moedas">0</span></h1>
+            <p>Ganhos: <span id="produção">0</span>s</p>
         </div>
         <div>
 
@@ -47,7 +58,7 @@
 
     </div>
     <div id="caixaAviso" class="avisoEscondido">
-        
+
         <p id="textoAviso">Pontos insuficientes!</p>
     </div>
 
