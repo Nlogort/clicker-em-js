@@ -21,16 +21,21 @@
 </head>
 
 <body>
+    <!-- div para a confirmação do reset-->
+    <div></div>
+
+    <!--botao que vai chamar o reset-->
     <button onclick="chamarReset()" class="botaoEscondidoReset">Resetar</button>
+    <!--caixa do reset e seus conteudos-->
     <div id="CaixaReset" class="resetEscondido">
-    <p>Deseja apagar sua pescaria?</p>
-    <div class="botoes-confirmacao">
-        <button onclick="confirmarResetTotal()">Sim, deletar</button>
-        <button onclick="fecharCaixaReset()">Cancelar</button>
+        <p>Deseja apagar sua pescaria?</p>
+        <div class="botoes-confirmacao">
+            <button onclick="confirmarResetTotal()" id="botaoConfirma">Sim, deletar</button>
+            <button onclick="fecharCaixaReset()" id="botaoCancela">Cancelar</button>
+        </div>
     </div>
-</div>
 
-
+    <!--pontuacao-->
     <main>
         <div class="pontos">
             <h1>Pontuação: <span id="moedas">0</span></h1>
@@ -43,7 +48,7 @@
         </div>
 
     </main>
-
+    <!--melhorias -->
     <div>
         <h2>Melhorias:</h2>
 
@@ -55,7 +60,7 @@
         <button class="melhoriasbtn" onclick="upgrade()">
             Contratar Pescador:<span id="autoClicker">100</span> Pontos
         </button>
-
+        <!--caixa do alerta-->
     </div>
     <div id="caixaAviso" class="avisoEscondido">
 

@@ -86,7 +86,7 @@ body {
   transform: scale(0.85);
 }
 
-h1{
+h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,16 +133,17 @@ h2 {
 .avisoVisivel {
   opacity: 1;
   top: 20px;
-  
+
 }
 
-#textoAviso{
+#textoAviso {
   margin: 0;
   text-align: center;
 }
+
 /*PARTE DO BOTAO DE RESETAR TODA ESSA PARADA DE JOGO*/
-#CaixaReset{
- top: 20px;
+#CaixaReset {
+  top: 20px;
   position: fixed;
   transition: all 0.3s ease;
   left: 0;
@@ -156,21 +157,22 @@ h2 {
   align-items: center;
   color: white;
   background-color: red;
-  
+  text-align: center;
 }
 
-.resetEscondido{
+.resetEscondido {
   opacity: 0;
   top: -100px;
   pointer-events: none;
 }
 
-.resetVisivel{
+.resetVisivel {
   opacity: 1;
   top: 20px;
 }
+
 /*botao que aparece na tela, onde apos a caixa aparecer ele suma por alguns minutos*/
-.botaoEsondidoReset{
+.botaoEsondidoReset {
   opacity: 0;
   top: -100px;
   pointer-events: none;
