@@ -52,7 +52,7 @@ body {
 
 .botaoPescar:active {
   transition: transform 0.02s ease;
-  transform: scale(0.88);
+  transform: scale(0.85);
 }
 
 .melhoriasbtn {
@@ -95,6 +95,14 @@ h1 {
 }
 
 h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  font-size: 30px;
+}
+
+.ganhoSegundo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,21 +157,24 @@ h2 {
   left: 0;
   right: 0;
   margin: auto;
-  width: 300px;
-  height: 18dvh;
+  width: 350px;
+  height: 150px;
   font-size: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   background-color: red;
   text-align: center;
+ 
 }
 
 .resetEscondido {
   opacity: 0;
   top: -100px;
   pointer-events: none;
+
 }
 
 .resetVisivel {
@@ -171,9 +182,28 @@ h2 {
   top: 20px;
 }
 
-/*botao que aparece na tela, onde apos a caixa aparecer ele suma por alguns minutos*/
-.botaoEsondidoReset {
-  opacity: 0;
-  top: -100px;
-  pointer-events: none;
+/*botao que aparece na tela do jogo, sim e literalmente isso ;-;*/
+.botaoReset {
+  width: 100px;
+  height: 50px;
+border-radius: 20px;/*trocar depois essa parte*/
+}
+
+/*PARTE DOS BOTOES DE DENTRO DA CAIXA DE RESET*/
+.botoes-confirmacao {
+  padding: 10px;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  border: none;
+
+}
+
+.botoes-confirmacao button{/*PRECISO ALTERAR AS COISAS DO BOTAO DE DENTRO DA CAIXA DO RESET AQUI*/
+width: 100px;
+height: 50px;
+
 }
