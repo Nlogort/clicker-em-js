@@ -167,7 +167,7 @@ h2 {
   color: white;
   background-color: red;
   text-align: center;
- 
+
 }
 
 .resetEscondido {
@@ -184,10 +184,42 @@ h2 {
 
 /*botao que aparece na tela do jogo, sim e literalmente isso ;-;*/
 .botaoReset {
-  width: 100px;
-  height: 50px;
-border-radius: 20px;/*trocar depois essa parte*/
+  height: 100px;
+  width: 150px;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  background-image: url(img/lixeira.png);
+  background-repeat: no-repeat;
+  outline: none;
+  background-size: 100%;
+  background-position-y: center;
+  border: none;
+  background-color: transparent;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0.95);
+  font-size: 27px;
+   
+
 }
+
+.botaoReset:hover{
+  transition: transform 0.2s ease;
+  transform: scale(0.90);
+}
+
+.botaoReset:active{
+  transition: transform 0.2s ease;
+  transform: scale(0.80);
+}
+
+
+
+
+
 
 /*PARTE DOS BOTOES DE DENTRO DA CAIXA DE RESET*/
 .botoes-confirmacao {
@@ -202,8 +234,9 @@ border-radius: 20px;/*trocar depois essa parte*/
 
 }
 
-.botoes-confirmacao button{/*PRECISO ALTERAR AS COISAS DO BOTAO DE DENTRO DA CAIXA DO RESET AQUI*/
-width: 100px;
-height: 50px;
+.botoes-confirmacao button {
+  /*PRECISO ALTERAR AS COISAS DO BOTAO DE DENTRO DA CAIXA DO RESET AQUI*/
+  width: 100px;
+  height: 50px;
 
 }
