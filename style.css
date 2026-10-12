@@ -33,7 +33,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 55px;
   background-color: transparent;
   border: none;
   -webkit-tap-highlight-color: transparent;
@@ -165,7 +165,11 @@ h2 {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: red;
+  background-image: url(img/dentro-lixeira.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 350px;
+  background-color: transparent;
   text-align: center;
 
 }
