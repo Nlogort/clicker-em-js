@@ -14,7 +14,7 @@ Jogo desenvolvido com HTML,CSS e JAVASCRIPT,como uma parte da minha jornada de a
 
 ## 🎯 Sobre o projeto
 
-Estou desenvolvendo esse jogo para aprimorar o conhecimento em JavaScript e registrando minha evolução
+Desenvolvi esse jogo para aprimorar o conhecimento em JavaScript e registrei minha evolução
 
 ## 🧠 Conceitos praticados
 
