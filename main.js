@@ -3,7 +3,7 @@
 //======================================================
 let score = parseInt(localStorage.getItem('pontos')) || 0;
 let peixesPorClique = parseInt(localStorage.getItem('peixeClique')) || 1;
-let pontosAutomaticos = 0;
+let pontosAutomaticos = parseInt(localStorage.getItem('ganhoSegundo'))||0;
 //======================================================
 // 2. LOJA/PREÇOS (Custo das melhorias)
 //======================================================
@@ -18,7 +18,7 @@ function pontos() {
     document.getElementById('moedas').innerText = score;
     salvarJogo();
 }
-function upgrade() {
+function cliqueDuplo() {
     if (score >= pontoDobrado
     ) {
         score = score - pontoDobrado;
@@ -26,6 +26,7 @@ function upgrade() {
         pontoDobrado = pontoDobrado * 2;
         document.getElementById('moedas').innerText = score;
         document.getElementById('autoClicker').innerText = pontoDobrado;
+        document.getElementById('ganhoSegundo').innerText=pontosAutomaticos;
         salvarJogo();
     } else {
         mostrarAviso(`Você precisa de ${pontoDobrado} pontos para comprar`)
@@ -57,14 +58,10 @@ setInterval(rodarTempo, 1000);
 function salvarJogo() {
     localStorage.setItem('pontos', score);
     localStorage.setItem('peixeClique', peixesPorClique);
-    localStorage.setItem('pontoAutomatico', pontosAutomaticos);
+    localStorage.setItem('ganhoSegundo', pontosAutomaticos);
     localStorage.setItem('pontoAutomatico', pontoDobrado);
     localStorage.setItem('pontoDuplo', custoDobraPesca);
 }
-// Linha solta no final do arquivo main.js para atualizar o placar assim que a página abre:
-document.getElementById('moedas').innerText = score;
-document.getElementById('autoClicker').innerText = pontoDobrado;
-document.getElementById('ClickDobrado').innerText = custoDobraPesca;
 
 function mostrarAviso(mensagem) { // função que cria o motor que e chamado nos 2 else
     const caixa = document.getElementById('caixaAviso'); //define a "caixa" ou seja a div do html como constante(voce vai entender eu acho ;p)
@@ -89,7 +86,13 @@ document.getElementById('botaoConfirma').addEventListener('click', function () {
 })
 
 
-const botaoCancelar = document.getElementById('CaixaReset');
+const botaoCancelar = document.getElementById('botaoCancela');
 botaoCancelar.addEventListener('click', function () {
-    botaoCancelar.className = 'resetEscondido'
+   document.getElementById('CaixaReset').className='resetEscondido'
 })
+
+// Linha solta no final do arquivo main.js para atualizar o placar assim que a página abre:
+document.getElementById('moedas').innerText = score;
+document.getElementById('autoClicker').innerText = pontoDobrado;
+document.getElementById('ClickDobrado').innerText = custoDobraPesca;
+document.getElementById('ganhoSegundo').innerText=pontosAutomaticos;
