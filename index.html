@@ -25,39 +25,42 @@
     <div></div>
 
     <!--botao que vai chamar o reset-->
-    <button onclick="chamarReset()" class="botaoReset">Resetar?</button>
-    <!--caixa do reset e seus conteudos-->
-    <div id="CaixaReset" class="resetEscondido">
-        <p>Deseja apagar sua pescaria?</p>
-        <div class="botoes-confirmacao">
-            <button  id="botaoConfirma">Sim, deletar</button>
-            <button  id="botaoCancela">Cancelar</button>
-        </div>
-    </div>
+
 
     <!--pontuacao-->
     <main>
         <div>
             <h1>Pontuação: <span id="moedas">0</span></h1>
-            <p >Ganhos: <span id="ganhoSegundo">0</span>s</p>
+            <p class="ganhoParagrafo">Ganhos: <span id="ganhoSegundo">0</span>s</p>
         </div>
+
+        <button title="Resetar jogo" onclick="chamarReset()" class="botaoReset">Resetar</button>
+        <!--caixa do reset e seus conteudos-->
+        <div id="CaixaReset" class="resetEscondido">
+            <p>Deseja apagar sua pescaria?</p>
+            <div class="botoes-confirmacao">
+                <button id="botaoConfirma">Sim, deletar</button>
+                <button id="botaoCancela">Cancelar</button>
+            </div>
+        </div>
+
         <div>
 
-            <img class="botaoPescar" id="BotaoDePontos" onclick="pontos()" src="img/barco-botao.png"
-                alt="botao de pesca">
+            <img title="Botao de pontos" class="botaoPescar" id="BotaoDePontos" onclick="pontos()"
+                src="img/barco-botao.png" alt="botao de pesca">
         </div>
 
     </main>
     <!--melhorias -->
     <div>
-        <h2>Melhorias:</h2>
+        <h2 class="txtMelhoria">Melhorias:</h2>
 
-        <button class="melhoriasbtn" onclick="pontosPorPesca()">
+        <button title="Dobrar clique" class="melhoriasbtn" onclick="pontosPorPesca()">
             Dobrar Clique:<span id="ClickDobrado">50</span> Pontos
 
         </button>
 
-        <button class="melhoriasbtn" onclick="cliqueDuplo()">
+        <button title="Contratar pescador" class="melhoriasbtn" onclick="cliqueDuplo()">
             Contratar Pescador:<span id="autoClicker">100</span> Pontos
         </button>
         <!--caixa do alerta-->

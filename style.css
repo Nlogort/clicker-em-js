@@ -28,12 +28,12 @@ body {
           BOTAO DOS PONTOS
 ===========================================================*/
 .botaoPescar {
-  height: 290px;
-  width: 290px;
+  height: 280px;
+  width: 280px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 55px;
+  margin-top: 0px;
   background-color: transparent;
   border: none;
   -webkit-tap-highlight-color: transparent;
@@ -100,7 +100,16 @@ h2 {
   justify-content: center;
   margin: 1px;
   font-size: 30px;
-  color: rgb(224, 186, 116);
+  
+}
+
+.ganhoParagrafo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  font-size: 30px;
+
 }
 
 p {
@@ -108,7 +117,7 @@ p {
   align-items: center;
   justify-content: center;
   margin: 1px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #caixaAviso {
@@ -189,13 +198,9 @@ p {
 
 /*botao que aparece na tela do jogo, sim e literalmente isso ;-;*/
 .botaoReset {
-  height: 100px;
-  width: 150px;
+  height: 90px;
+  width: 90px;
   font-size: 20px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
   cursor: pointer;
   background-image: url(img/lixeira.png);
   background-repeat: no-repeat;
@@ -206,17 +211,26 @@ p {
   background-color: transparent;
   transition: transform 0.2s ease-in-out;
   transform: scale(0.95);
-  font-size: 27px;
-   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  align-self: center;
+  /* Força o alinhamento central dentro de um container Flexbox */
+  margin: auto;
+  margin-top: 0px;
+
+
 
 }
 
-.botaoReset:hover{
+.botaoReset:hover {
   transition: transform 0.2s ease;
   transform: scale(0.90);
 }
 
-.botaoReset:active{
+.botaoReset:active {
   transition: transform 0.2s ease;
   transform: scale(0.80);
 }
